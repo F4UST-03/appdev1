@@ -1,7 +1,7 @@
 # About Me
 
 **Name:** Jorilyn Pantallano  
-**Course/Year:** BS Information Technology 3rd Year  
+**Course/Year:** BS Information Systems 3rd Year  
 **Fun Fact:** I love performing arts, especially psychology. Therefore, I can understand human behaviors. I am also in a middle of exploring and finding passion in IT/IS field to know how they work and decide my future career.
 
 ---
