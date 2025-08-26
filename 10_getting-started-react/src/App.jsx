@@ -18,7 +18,7 @@ function App() {
       <p>I want to learn React because I want to expand my knowledge in web development and it is also popular among companies. </p>
       <p>I also want to learn React because it is a good skill to have in the job market.</p>
       <p>In my developing experience, I've used Laravel which can sometimes or most have issues when it comes to my device that is fully secured.</p>
-      <p>Upon installing React package, I realized that it has small about of files.</p>
+      <p>Upon installing React package, I realized that it has small amount of files. It doesn't even need external tools.</p>
 
       {/* <div>
         <a href="https://vite.dev" target="_blank">
