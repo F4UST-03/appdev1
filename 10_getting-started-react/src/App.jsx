@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <h1>About Me</h1>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxdVcGIJDWvg2jyNh2Q8qVb2c9SwxB0ILpv5DycSJxlOsggiC4EriE52AmjZvLKYSdzHw&usqp=CAU" alt="arab cat" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxdVcGIJDWvg2jyNh2Q8qVb2c9SwxB0ILpv5DycSJxlOsggiC4EriE52AmjZvLKYSdzHw&usqp=CAU" alt="arab cat meme" />
       <p><strong>Name: </strong>Jorilyn O. Pantallano</p>
       <p><strong>Course & Year: </strong>Bachelor of Science in Information Systems 3</p>
       <p><strong>Fun fact: </strong>I like performing & psychology.</p>
