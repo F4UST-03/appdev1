@@ -1,0 +1,18 @@
+
+<button onclick="changeColor()">Click</button>
+
+  <script>
+    function changeColor() {
+      let favoriteColor = prompt("What is your favorite color?");
+      
+      if (favoriteColor) {
+        document.body.style.backgroundColor = favoriteColor;
+        
+        document.getElementById("colorText").textContent = 
+          "Your favorite color is: " + favoriteColor;
+        
+        setTimeout(() => document.getElementById("delayedMessage").textContent = "This message appears after 2 seconds", 2000);
+      }
+    }
+  </script>
+
