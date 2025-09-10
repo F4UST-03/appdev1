@@ -1,2 +1,7 @@
 "Line 1" 
 "Line 2" 
+
+What did you notice about the file and commit history after reset?
+- I noticed that git reset command deletes all committed changes in commit history, 
+and this command also highlights the importance of micro commit so that when we reset a commit, 
+then all or huge changes would not be deleted/removed.
