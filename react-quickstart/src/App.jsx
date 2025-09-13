@@ -28,6 +28,8 @@ function App() {
       {/* <h1>Welcome to My App!</h1>
       <MyButton /> */}
       <AboutPage />
+      <img className="avatar" />
+
     </>
   )
 }
