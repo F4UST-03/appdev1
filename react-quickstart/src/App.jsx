@@ -4,50 +4,46 @@
 import './App.css'
 
 
-// function Admin() {
-//   return (
-//     <>
-//       <h1>Admin Page</h1>
-//       <h3>This is an Admin page</h3>
-//     </>
-//   )
+// const products = [
+//   { title: 'Cabbage', isFruit: false, id: 1 },
+//   { title: 'Garlic', isFruit: false, id: 2 },
+//   { title: 'Apple', isFruit: true, id: 3 },
+// ];
+
+// function ShoppingList() {
+//   const listItems = products.map(product => (
+//     <li
+//       key={product.id}
+//       style={{
+//         color: product.isFruit ? 'magenta' : 'darkgreen'
+//       }}
+//     >
+//       {product.title}
+//     </li>
+//   ));
+
+//   return <ul>{listItems}</ul>; 
 // }
 
-// function LoginForm() {
-//   return (
-//     <>
-//       <h1>Login Page</h1>
-//       <h3>Please log in</h3>
-//     </>
-//   )
-// }
+function MyButton() {
+  function handleClick() {
+    alert('You clicked me!');
+  }
 
-const products = [
-  { title: 'Cabbage', isFruit: false, id: 1 },
-  { title: 'Garlic', isFruit: false, id: 2 },
-  { title: 'Apple', isFruit: true, id: 3 },
-];
-
-function ShoppingList() {
-  const listItems = products.map(product => (
-    <li
-      key={product.id}
-      style={{
-        color: product.isFruit ? 'magenta' : 'darkgreen'
-      }}
-    >
-      {product.title}
-    </li>
-  ));
-
-  return <ul>{listItems}</ul>; 
+  return (
+    <button onClick={handleClick}>
+      Click me
+    </button>
+  );
 }
+
 
 function App() {
   return (
     <>
       {/* {content} */}
-      <ShoppingList />
+      {/* <ShoppingList /> */}
+      <MyButton />
     </>
   );
 }
