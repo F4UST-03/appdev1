@@ -3,29 +3,36 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 
-// function MyButton() {
-//   return (
-//     <button>Click</button>
-//   );
-// }
 
-// function AboutPage() {
-//   return (
-//     <>
-//       <h1>About</h1>
-//       <p>Hello there.<br />How do you do?</p>
-//     </>
-//   );
-// }
+function Admin() {
+  return (
+    <>
+      <h1>Admin Page</h1>
+      <h3>This is an Admin page</h3>
+    </>
+  )
+}
+
+function LoginForm() {
+  return (
+    <>
+      <h1>Login Page</h1>
+      <h3>Please log in</h3>
+    </>
+  )
+}
 
 
 function App() {
-  // const [count, setCount] = useState(0)
-  const user = {
-    name: 'Jori',
-    age: 22,
-    avatarUrl: 'https://avatars.githubusercontent.com/u/184085946?v=4'
+
+  const isLoggedIn = true;
+  let content;
+  if (isLoggedIn) {
+    content = <Admin />;
+  } else {
+    content = <LoginForm />;
   }
+
 
   return (
     <>
@@ -33,9 +40,10 @@ function App() {
       <MyButton /> */}
       {/* <AboutPage /> */}
       {/* <img className="avatar" /> */}
-      <h1>Hello {user.name}!</h1>
+      {/* <h1>Hello {user.name}!</h1>
       <p>Age: {user.age}</p>
-      <img className="avatar" src={user.avatarUrl}/>
+      <img className="avatar" src={user.avatarUrl}/> */}
+      {content}
     </>
   )
 }
