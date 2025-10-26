@@ -4,19 +4,27 @@
 import './App.css'
 
 
-function Cup({ guest }) {
-  return <h2>Tea cup for guest #{guest}</h2>;
-}
+import ComponentA from './my_components/ComponentA';
+import ComponentC from './my_components/ComponentC';
+
+import { greetA } from './my_modules/ModuleA.js';
+import { greetB } from './my_modules/ModuleB.js';
+import { greetC } from './my_modules/ModuleC.js';
 
 
 function App() {
-  return (
-    <>
-      <Cup guest={1} />
-      <Cup guest={2} />
-      <Cup guest={3} />
-    </>
 
+  console.log('Hello from RootModule');
+  greetA();
+  greetB();
+  greetC();
+
+  return (
+    <div>
+      <h1>Root Component</h1>
+      <ComponentA />
+      <ComponentC />
+    </div>
   )
 }
 
