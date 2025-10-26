@@ -3,31 +3,20 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 
-import { people } from './components/data.js';
-import { getImageUrl } from './components/utils.jsx';
 
+function Cup({ guest }) {
+  return <h2>Tea cup for guest #{guest}</h2>;
+}
 
 
 function App() {
-  const listItems = people.map(person =>
-    <li key={person.id}>
-      <img
-        src={getImageUrl(person)}
-        alt={person.name}
-      />
-      <p>
-        <b>{person.name}:</b>
-        {' ' + person.profession + ' '}
-        known for {person.accomplishment}
-      </p>
-    </li>
-  );
-  
   return (
-    <article>
-      <h1>Scientists</h1>
-      <ul>{listItems}</ul>
-    </article>
+    <>
+      <Cup guest={1} />
+      <Cup guest={2} />
+      <Cup guest={3} />
+    </>
+
   )
 }
 
