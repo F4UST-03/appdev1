@@ -1,4 +1,4 @@
-function Profile() {
+export function Profile() {
   return (
     <img
       src="https://i.imgur.com/QIrZWGIs.jpg"
@@ -17,3 +17,4 @@ export default function Gallery() {
     </section>
   );
 }
+
