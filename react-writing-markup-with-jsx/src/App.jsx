@@ -7,12 +7,13 @@ export default function TodoList() {
       <img 
         src="https://i.imgur.com/yXOvdOSs.jpg" 
         alt="Hedy Lamarr" 
-        class="photo"
+        className="photo" 
       />
-      <ul />
-        <li />Invent new traffic lights
-        <li />Rehearse a movie scene
-        <li />Improve the spectrum technology
+      <ul>
+        <li>Invent new traffic lights</li>
+        <li>Rehearse a movie scene</li>
+        <li>Improve the spectrum technology</li>
+      </ul>
     </>
   )
 }
