@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Login () {
+    const navigate = useNavigate();
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
     const [users, setUsers] = useState([])
@@ -27,7 +29,7 @@ function Login () {
         }
 
         localStorage.setItem("loggedInUser", JSON.stringify(foundUser))
-        window.location.href = "/todos"
+        navigate("/todos")
     }
 
     return (

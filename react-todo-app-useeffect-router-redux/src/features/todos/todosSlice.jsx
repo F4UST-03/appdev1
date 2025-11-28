@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit"
-import { getTodosAPI, addTodoAPI, updateTodoAPI, deleteTodoAPI } from "./todosAPI.js"
+import { getTodosAPI, addTodoAPI, updateTodoAPI, deleteTodoAPI } from "./todosAPI"
 
 export const fetchTodos = createAsyncThunk("todos/fetchTodos", async () => {
     return await getTodosAPI()
@@ -21,7 +21,13 @@ export const deleteTodo = createAsyncThunk("todos/deleteTodo", async (id) => {
 const todosSlice = createSlice({
     name: "todos",
     initialState: { items: [] },
-    reducers: {},
+    reducers: {
+        toggleLocal: (state, action) => {
+            const id = action.payload
+            const index = state.items.findIndex((item) => item.id === id)
+            if (index !== -1) state.items[index].completed = !state.items[index].completed
+        }
+    },
     extraReducers: builder => {
         builder
         .addCase(fetchTodos.fulfilled, (state, action) => {
@@ -40,5 +46,7 @@ const todosSlice = createSlice({
         })
     }
 })
+
+export const { toggleLocal } = todosSlice.actions
 
 export default todosSlice.reducer
